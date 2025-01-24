@@ -1,0 +1,1 @@
+This example demonstrates a subtle bug that can occur due to Scala's type variance. The `myMethod` attempts to compare objects of type `MyClass[T]`, where `T` is not necessarily invariant. This could lead to unexpected comparisons depending on the context. The solution shows how to address this either via type parameter bounds or using a different comparison method.
